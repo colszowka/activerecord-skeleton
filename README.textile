@@ -1,8 +1,20 @@
 h1. ActiveRecord Skeleton
-A basic skeleton for ActiveRecord-backed Ruby apps, including a ready-to-go structure with YAML database config and rake tasks for migrating the database and generating migrations
+
+A basic skeleton for ActiveRecord-backed Ruby apps
+
+h2. Features
+* YAML database config
+* Rake tasks for generating migrations and migrating the database
+* Reasonable, Rails-style directory structure
+* Ready to go with SQLite 3
+* RACK_ENV-aware and thus ready to use with multiple environments with Sinatra or any other Rack-backed webapp framework
 
 h2. Usage
-# TODO...
+# Get "tarball":http://github.com/colszowka/activerecord-skeleton/tarball/master
+# Extract tarball to desired folder
+# Create a migration with <code>rake generate:migration NAME=create_users</code>
+# Create a model in lib/user.rb: <code>class User < ActiveRecord::Base; end;</code>
+# Add application code in project root directory and <code>require 'init'</code> in it
 
 h2. Copyright
 
