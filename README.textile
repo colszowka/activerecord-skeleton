@@ -26,14 +26,14 @@ h2. Usage with "Sinatra":http://www.github.com/sinatra/sinatra
 In your application file (say <code>app.rb</code> sitting in the project root), simply add <code>require 'init'</code> <b>after</b> <code>require 'sinatra'</code>.
 
 A basic sinatra app.rb might look like following (assuming you've got the user model setup and migrated)
-<code>
+<pre>
 require 'sinatra'
 require 'init'
 
 get '/' do
   User.all.map {|u| u.name}.to_sentence
 end
-</code>
+</pre>
 
 h2. Copyright
 
