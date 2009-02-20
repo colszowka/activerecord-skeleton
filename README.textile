@@ -1,0 +1,9 @@
+h1. ActiveRecord Skeleton
+A basic skeleton for ActiveRecord-backed Ruby apps, including a ready-to-go structure with YAML database config and rake tasks for migrating the database and generating migrations
+
+h2. Usage
+# TODO...
+
+h2. Copyright
+
+activerecord-skeleton is Copyright &copy; 2009 Christoph Olszowka, It is free software, and may be redistributed under the terms specified in the MIT-LICENSE file.
