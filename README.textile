@@ -11,7 +11,7 @@ h2. Features
 * RACK_ENV-aware and thus ready to use with multiple environments with Sinatra or any other Rack-backed webapp framework
 * Logging for ActiveRecord
 
-h2. Usage
+h2. Setup
 
 # Get "tarball":http://github.com/colszowka/activerecord-skeleton/tarball/master
 # Extract tarball to desired folder
@@ -20,6 +20,20 @@ h2. Usage
 # <code>rake migrate</code> (if you stick to the default SQLite setup, the database for the current environment will be automatically created upon migration)
 # Create a model in lib/user.rb: <code>class User < ActiveRecord::Base; end;</code>
 # Add application code in project root directory and <code>require 'init'</code> in it
+
+h2. Usage with "Sinatra":http://www.github.com/sinatra/sinatra
+
+In your application file (say <code>app.rb</code> sitting in the project root), simply add <code>require 'init'</code> <b>after</b> <code>require 'sinatra'</code>.
+
+A basic sinatra app.rb might look like following (assuming you've got the user model setup and migrated)
+<code>
+require 'sinatra'
+require 'init'
+
+get '/' do
+  User.all.map {|u| u.name}.to_sentence
+end
+</code>
 
 h2. Copyright
 
