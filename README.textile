@@ -16,7 +16,7 @@ h2. Usage
 # Get "tarball":http://github.com/colszowka/activerecord-skeleton/tarball/master
 # Extract tarball to desired folder
 # Copy config/database.sample.yml to config/database.yml
-# Create a migration with <code>rake generate:migration NAME=create_users</code>
+# Create a migration with <code>rake generate:migration NAME=create_users</code> and add your code in <code>db/migrate/001_create_users.rb</code>
 # <code>rake migrate</code> (if you stick to the default SQLite setup, the database for the current environment will be automatically created upon migration)
 # Create a model in lib/user.rb: <code>class User < ActiveRecord::Base; end;</code>
 # Add application code in project root directory and <code>require 'init'</code> in it
