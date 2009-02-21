@@ -2,6 +2,8 @@ h1. ActiveRecord Skeleton
 
 A basic skeleton for ActiveRecord-backed Ruby apps
 
+http://blog.olszowka.de/2009/02/21/introducing-activerecord-skeleton/
+
 h2. Features
 
 * YAML database config
@@ -13,15 +15,14 @@ h2. Features
 
 h2. Setup
 
-# Get "tarball":http://github.com/colszowka/activerecord-skeleton/tarball/master
-# Extract tarball to desired folder
+# Get and extract "tarball":http://github.com/colszowka/activerecord-skeleton/tarball/master or git clone this repository
 # Copy config/database.sample.yml to config/database.yml
 # Create a migration with <code>rake generate:migration NAME=create_users</code> and add your code in <code>db/migrate/001_create_users.rb</code>
 # <code>rake migrate</code> (if you stick to the default SQLite setup, the database for the current environment will be automatically created upon migration)
 # Create a model in lib/user.rb: <code>class User < ActiveRecord::Base; end;</code>
 # Add application code in project root directory and <code>require 'init'</code> in it
 
-h2. Usage with "Sinatra":http://www.github.com/sinatra/sinatra
+h2. Example for usage with "Sinatra":http://www.github.com/sinatra/sinatra
 
 In your application file (say <code>app.rb</code> sitting in the project root), simply add <code>require 'init'</code> <b>after</b> <code>require 'sinatra'</code>.
 
