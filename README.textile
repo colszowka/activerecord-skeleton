@@ -1,3 +1,5 @@
+**Hello, fellow traveler. This project is very outdated nowadays (Dec 2013). Please checkout https://github.com/colszowka/rack-boilerplate for a more current approach to this**
+
 h1. ActiveRecord Skeleton
 
 A basic skeleton for ActiveRecord-backed Ruby apps
